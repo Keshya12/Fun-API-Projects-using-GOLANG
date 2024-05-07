@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Submission</title>
+        <style>
+            html, body {
+                height: 100%; /* Full height for the body */
+                margin: default; /* Remove default margin */
+                display: flex;
+                justify-content: center; /* Center horizontally */
+                align-items: center; /* Center vertically */
+            }
+            .button{
+                display: block;
+                justify-content: center; /* Center horizontally */
+                align-items: center; /* Center vertically */
+            }
+            .centered-form {
+                border: 2px solid #4CAF50;
+                padding: 20px;
+                margin: 20px auto; /* Centered horizontally */
+                width: 300px;
+                background-color: #e4c0cf;
+                border-radius: 10px; /* Rounded corners */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form method="post" action="/form" class="centered-form">
+                <label for="name">NAME</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input id="name" name="name" type="text" value=""><br><br>
+                <label for="address">ADDRESS</label>
+                <input id="address" name="address" type="text" value=""><br><br>
+                <input type="submit" value="SUBMIT" class="button">
+            </form>
+        </div>
+    </body>
+</html>
